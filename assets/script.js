@@ -1,5 +1,5 @@
-﻿function mouseOver(picture) {
-    if (picture.id == "image1") {
+﻿function mouseOver(picture) { // le nom du paramètre importe peu
+    /*if (picture.id == "image1") {
         document.getElementById("image1").src = "assets/img/image1_2.jpg";
     }
     else if (picture.id == "image2") {
@@ -14,4 +14,7 @@
     else {
         document.getElementById("image5").src = "assets/img/image5_2.jpg";
     }
+    */
+    // Correction
+    document.getElementById(picture).src = "assets/img/" + picture + "_2.jpg";
 }
